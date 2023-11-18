@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<center>
+<b>Cart</b><br>
+<h5>Products:</h5>
+{% for i in items %}
+{{i.product}}<br>
+{% endfor %}
+<h5>Total Amount to pay: </h5>{{total}}
+<font class="" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Show me the money!</font>
+<!-- writes out the form tag automatically -->
+{{ form.render }}
+</center>
+{% endblock %}
